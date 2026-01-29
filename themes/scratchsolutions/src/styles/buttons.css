@@ -1,0 +1,16 @@
+.btn {
+  @apply inline-block rounded-full px-6 py-2.5 font-medium capitalize transition duration-300 cursor-pointer;
+}
+
+.btn-sm {
+  @apply  px-4 py-1.5 text-sm;
+}
+
+.btn-primary {
+  @apply border border-primary bg-primary text-text-dark hover:bg-transparent hover:text-primary;
+}
+
+.btn-outline-primary {
+  @apply  text-text hover:bg-primary! hover:text-dark;
+}
+

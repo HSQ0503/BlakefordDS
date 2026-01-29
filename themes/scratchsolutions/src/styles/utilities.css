@@ -1,0 +1,111 @@
+/* form style */
+@utility form-input {
+  @apply w-full rounded border-primary/20 bg-dark px-4 py-3 text-text placeholder:text-text-light/60 text-sm focus:border-primary/40  focus:ring-transparent;
+}
+
+@utility form-label {
+  @apply mb-2 block font-primary font-medium text-text;
+}
+
+@utility hero-text {
+  @apply sm:text-7xl;
+}
+
+/* Gradient border utility */
+@utility gradient-border {
+  @apply relative border-border backdrop-blur-xl bg-dark/10;
+  box-shadow: 0px -8px 20px 0px #ffffff0a inset;
+}
+
+@utility gradient-border {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    overflow: hidden;
+    background: var(--border-gradient);
+    border-radius: inherit;
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    z-index: -1;
+  }
+}
+
+/* Disable gradient border on hover */
+@utility gradient-border-disable-hover {
+  &:hover::before {
+    display: none;
+  }
+}
+
+/* Gradient border hover effect */
+@utility gradient-border-hover {
+  &:hover {
+    @apply backdrop-blur-2xl bg-dark/20;
+  }
+
+  &:hover::before {
+    background: linear-gradient(
+      90deg,
+      rgba(88, 217, 204, 0.8) 0%,
+      rgba(88, 217, 204, 1) 50%,
+      rgba(88, 217, 204, 0.8) 100%
+    );
+  }
+}
+
+/* Gradient text */
+@utility gradient-text {
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* gradient text secondary */
+@utility gradient-text-secondary {
+  background: linear-gradient(
+    90deg,
+    rgba(145, 145, 145, 0.7) 0%,
+    rgba(200, 200, 200, 0.8) 20%,
+    rgba(255, 255, 255, 0.9) 40%,
+    rgba(255, 255, 255, 0.9) 60%,
+    rgba(200, 200, 200, 0.8) 80%,
+    rgba(145, 145, 145, 0.7) 100%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-smooth 8s ease-in-out infinite;
+}
+
+@keyframes gradient-smooth {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@utility bg-transparent-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.474) 70.27%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+/* Text stroke effect */
+@utility text-stroke {
+  -webkit-text-stroke: 2px var(--color-light);
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-stroke: 2px var(--color-light);
+}

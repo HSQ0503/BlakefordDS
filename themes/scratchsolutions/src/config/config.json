@@ -1,0 +1,45 @@
+{
+  "site": {
+    "title": "Blakeford",
+    "base_url": "https://blakeford.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "150",
+    "logo_height": "27",
+    "logo_text": "Blakeford"
+  },
+
+  "settings": {
+    "search": false,
+    "sticky_header": true,
+    "pagination": 3,
+    "blog_folder": "blog"
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "apply_form_action": "#",
+    "newsletter_action": "#",
+    "footer_content": "Central Florida's trusted AI automation consultants. Helping local businesses save time and money every week.",
+    "copyright": "Blakeford AI Consulting. Proudly serving Central Florida businesses."
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Book a Call",
+    "link": "/contact"
+  },
+
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  },
+
+  "metadata": {
+    "meta_author": "Blakeford",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Central Florida's AI automation consultants. We help local coaches, consultants, and service providers save time and money by automating admin tasks."
+  }
+}
